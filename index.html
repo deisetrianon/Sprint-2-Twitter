@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Twitter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <!-- Fonte Helvetica Neue -->
+  <link rel="stylesheet" type="text/css" media="screen" href="Fontes/HelveticaNeue/helvetica-neue.css" />
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+
+  <header>
+    <i class="fab fa-twitter fa-2x"></i>
+  </header>
+
+  <section id="formSection">
+    <i class="fas fa-user-circle fa-3x"></i>
+    <form autocomplete="off">
+    <textarea cols="30" rows="1" placeholder="O que está acontecendo?" onkeyup="characterCounter()"></textarea>
+    <input type="submit" value="Tweetar" id="button" onclick="submitTweet(event)"></input>
+    <span id="characterNumber">140</span>
+    </form>
+  </section>
+
+  <main>
+  </main>
+
+  <script src="app.js"></script>  
+</body>
+</html>
