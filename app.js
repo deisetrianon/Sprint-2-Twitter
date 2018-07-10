@@ -2,7 +2,7 @@ function submitTweet(event) {
   /* Captura o que o usuário insere e cria uma div para colocá-lo */
   var tweet = document.querySelector('textarea').value;
   var newDiv = document.createElement('div');
-  newDiv.style = 'background-color: white; text-align: left; padding: 10px; width: auto; height: auto; margin-bottom: 15px; border: 1px solid #c6e7fb; word-wrap: break-word;';
+  newDiv.style = 'background-color: white; text-align: left; padding: 10px; width: auto; height: auto; margin-bottom: 15px; border: 1px solid #c6e7fb; word-wrap: break-word; white-space: pre-wrap';
 
   /* Verifica o horário em que o 'tweet' é enviado e adiciona o número zero aos minutos, quando necessário */
   var date = new Date();
